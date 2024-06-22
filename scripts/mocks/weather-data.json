@@ -1,0 +1,61 @@
+{
+    "data": {
+        "timelines": [
+            {
+                "timestep": "1d",
+                "endTime": "2024-06-05T10:00:00Z",
+                "startTime": "2024-05-31T10:00:00Z",
+                "intervals": [
+                    {
+                        "startTime": "2024-05-31T10:00:00Z",
+                        "values": {
+                            "moonPhase": 6,
+                            "moonriseTime": "2024-05-31T05:52:10Z",
+                            "moonsetTime": "2024-05-31T17:41:15Z"
+                        }
+                    },
+                    {
+                        "startTime": "2024-06-01T10:00:00Z",
+                        "values": {
+                            "moonPhase": 6,
+                            "moonriseTime": "2024-06-01T06:15:01Z",
+                            "moonsetTime": "2024-06-01T18:59:10Z"
+                        }
+                    },
+                    {
+                        "startTime": "2024-06-02T10:00:00Z",
+                        "values": {
+                            "moonPhase": 7,
+                            "moonriseTime": "2024-06-02T06:38:26Z",
+                            "moonsetTime": "2024-06-02T20:15:50Z"
+                        }
+                    },
+                    {
+                        "startTime": "2024-06-03T10:00:00Z",
+                        "values": {
+                            "moonPhase": 7,
+                            "moonriseTime": "2024-06-03T07:02:05Z",
+                            "moonsetTime": "2024-06-03T21:34:27Z"
+                        }
+                    },
+                    {
+                        "startTime": "2024-06-04T10:00:00Z",
+                        "values": {
+                            "moonPhase": 7,
+                            "moonriseTime": "2024-06-04T07:31:03Z",
+                            "moonsetTime": "2024-06-04T22:53:53Z"
+                        }
+                    },
+                    {
+                        "startTime": "2024-06-05T10:00:00Z",
+                        "values": {
+                            "moonPhase": 7,
+                            "moonriseTime": "2024-06-05T08:04:06Z",
+                            "moonsetTime": null
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

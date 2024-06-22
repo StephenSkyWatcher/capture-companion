@@ -1,0 +1,31 @@
+{
+    "data": {
+        "time": "2024-06-01T05:33:00Z",
+        "values": {
+            "cloudBase": null,
+            "cloudCeiling": null,
+            "cloudCover": 0,
+            "dewPoint": 41.56,
+            "freezingRainIntensity": 0,
+            "humidity": 60,
+            "precipitationProbability": 0,
+            "pressureSurfaceLevel": 29.89,
+            "rainIntensity": 0,
+            "sleetIntensity": 0,
+            "snowIntensity": 0,
+            "temperature": 55.06,
+            "temperatureApparent": 55.06,
+            "uvHealthConcern": 0,
+            "uvIndex": 0,
+            "visibility": 9.94,
+            "weatherCode": 1000,
+            "windDirection": 319.81,
+            "windGust": 16.5,
+            "windSpeed": 8.11
+        }
+    },
+    "location": {
+        "lat": 42.816441,
+        "lon": -71.063988
+    }
+}
