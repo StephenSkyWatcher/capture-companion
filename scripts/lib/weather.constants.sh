@@ -1,6 +1,6 @@
 declare -a moon_phases=("New" "Waxing Crescent" "First Quarter" "Waxing Gibbous" "Full" "Waning Gibbous" "Third Quarter" "Waning Crescent")
 
-declare -a moon_phases_emojis=(🌕 🌗 🌘 🌖 🌑 🌓 🌒 🌔)
+declare -a moon_phases_emojis=(🌑 🌗 🌘 🌖 🌕 🌓 🌒 🌔)
 
 declare -a weather_units='''{
     "cloudBase": "mi",

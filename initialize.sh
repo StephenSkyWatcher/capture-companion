@@ -22,8 +22,17 @@ session_root_dir=$dir
     exit 1;
 }
 
+_MOCK="${2:-0}"
+
+if [ $_MOCK = "LIVE" ]; then
+   MOCK_WEATHER_API=0
+else
+   MOCK_WEATHER_API=1
+fi
+
+echo $MOCK_WEATHER_API
+exit
 # Prompts the user to select the equipment to be used for the session
-GET_EQUIPMENT
 function get_equipment() {
     . $script_dir/lib/equipment.sh
     clear
@@ -56,7 +65,7 @@ function create_session_data() {
     local weather_json_path="$session_root_dir/weather-data.json"
     local session_json_path="$session_root_dir/details.json"
 
-    $script_dir/tomorrow_io.sh $weather_json_path
+    $script_dir/tomorrow_io.sh $weather_json_path $MOCK_WEATHER_API
 
     cat $weather_json_path | jq \
         --arg telescope "$telescope" \
@@ -66,13 +75,13 @@ function create_session_data() {
         > $session_json_path && rm $weather_json_path
 }
 
-get_equipment && 
-    echo "==> ✅ GET EQUIPMENT: Done" ||
-    echo "==> ❌ GET EQUIPMENT: Failed"
+# get_equipment && 
+#     echo "==> ✅ GET EQUIPMENT: Done" ||
+#     echo "==> ❌ GET EQUIPMENT: Failed"
 
-setup_directory &&
-    echo "==> ✅ SCAFFOLD SESSION DIRECTORY: Done" ||
-    echo "==> ❌ SCAFFOLD SESSION DIRECTORY:  Failed"
+# setup_directory &&
+#     echo "==> ✅ SCAFFOLD SESSION DIRECTORY: Done" ||
+#     echo "==> ❌ SCAFFOLD SESSION DIRECTORY:  Failed"
 
 create_session_data &&
     echo "==> ✅ CREATE SESSION DATA: Done" ||

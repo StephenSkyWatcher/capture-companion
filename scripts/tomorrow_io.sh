@@ -1,5 +1,4 @@
 #!/bin/bash
-MOCKED=1
 APIKEY="Rg9Cg8IU3zaZNOYJhqMXXfnkpACQiPD2"
 LAT="42.816441"
 LON="-71.063988"
@@ -13,6 +12,8 @@ script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 }
 
 OUTPUT_PATH=$1
+MOCKED="${2:-1}"
+
 source $script_dir/lib/weather.constants.sh
 
 dt=$(date '+%m-%d-%Y_%H:%M');
