@@ -4,6 +4,13 @@ These scripts lets someone who is actively taking photos of the night sky to mon
 the quality of the images, get realtime statistics, plate solving, luminosity, histograms
 annotated images, fits conversion and much more.
 
+### Samples
+#### Annotated Image (from `./audit.sh`)
+![Annotated Example](https://github.com/StephenSkyWatcher/capture-companion/blob/main/samples/annotated.jpg?raw=true)
+
+#### Histogram Image (from `./audit.sh`)
+![Histogram Example](https://github.com/StephenSkyWatcher/capture-companion/blob/main/samples/histogram.jpg?raw=true)
+
 ## Initialize a session
 
 - Stores equipment/hardware information
